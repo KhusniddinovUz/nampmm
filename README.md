@@ -1,1 +1,1 @@
-Namangan Pedagogik Mahorat Markazi rasmiy websayti
+Namangan Pedagogik Mahorat Markazi rasmiy vebsayti
