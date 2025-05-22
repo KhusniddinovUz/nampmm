@@ -37,8 +37,8 @@
         Hero Slider JS
     =================================*/
     $(".hero-slider").owlCarousel({
-      loop: false,
-      autoplay: false,
+      loop: true,
+      autoplay: true,
       smartSpeed: 500,
       autoplayTimeout: 3500,
       singleItem: true,

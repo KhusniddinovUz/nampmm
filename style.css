@@ -659,14 +659,16 @@ body {
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
+    padding-top: 135px;
 }
 
 .slider .single-slider .container {
     max-width: 90vw !important;
+    height: 100%;
 }
 
 .slider .single-slider .container .row {
-    height: 100vh;
+    height: 100%;
 }
 
 .slider .single-slider .text {
@@ -780,24 +782,24 @@ body {
 /*===========================
 	CIRCULAR LOOP CSS
 =============================*/
-#circular-loop {
+.circular-loop {
     position: relative;
     width: 500px;
     height: 500px;
 }
 
-#circular-loop #logo-wrapper {
+.circular-loop .logo-wrapper {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-#circular-loop #logo-wrapper img {
+.circular-loop .logo-wrapper img {
     width: 200px;
 }
 
-#circular-loop .circle {
+.circular-loop .circle {
     --n: 6;
     --r: 200px;
     position: relative;
@@ -806,7 +808,7 @@ body {
     animation: spin 20s linear infinite;
 }
 
-#circular-loop .circle .loop-item {
+.circular-loop .circle .loop-item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -822,33 +824,33 @@ body {
     transform: rotate(calc(360deg / var(--n) * var(--i))) translateY(calc(-1 * var(--r))) rotate(calc(-360deg / var(--n) * var(--i)));
 }
 
-#circular-loop .circle .loop-item img {
+.circular-loop .circle .loop-item img {
     width: 55px;
     display: block;
     animation: counterspin 20s linear infinite;
 }
 
-#circular-loop .circle .loop-item:nth-child(1) {
+.circular-loop .circle .loop-item:nth-child(1) {
     --i: 0;
 }
 
-#circular-loop .circle .loop-item:nth-child(2) {
+.circular-loop .circle .loop-item:nth-child(2) {
     --i: 1;
 }
 
-#circular-loop .circle .loop-item:nth-child(3) {
+.circular-loop .circle .loop-item:nth-child(3) {
     --i: 2;
 }
 
-#circular-loop .circle .loop-item:nth-child(4) {
+.circular-loop .circle .loop-item:nth-child(4) {
     --i: 3;
 }
 
-#circular-loop .circle .loop-item:nth-child(5) {
+.circular-loop .circle .loop-item:nth-child(5) {
     --i: 4;
 }
 
-#circular-loop .circle .loop-item:nth-child(6) {
+.circular-loop .circle .loop-item:nth-child(6) {
     --i: 5;
 }
 
