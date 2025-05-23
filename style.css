@@ -999,15 +999,12 @@ speakers #big-news {
 }
 
 /*===========================
-	GOOGLE MAPS Area CSS
+	GOOGLE MAPS Area CSS START
 =============================*/
 #maps {
-    padding-top: 50px;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 50px;
     width: 100vw;
     background-color: #1a76d1;
+    padding: 50px 5% 150px;
 }
 
 #maps > h1 {
@@ -1057,5 +1054,146 @@ h3 {
 }
 
 /*===========================
-	GOOGLE MAPS Area CSS
+	GOOGLE MAPS Area CSS END
+=============================*/
+
+
+/*===========================
+	FOOTER CSS START
+=============================*/
+footer {
+    position: relative;
+    background-color: #1a76d1;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+footer #footer-contacts {
+    width: 95vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+footer #footer-contacts .footer-contacts-image {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 340px;
+    margin-right: 100px;
+}
+
+footer #footer-contacts .footer-contacts-image img {
+    width: 100px;
+    color: #fff !important;
+}
+
+footer #footer-contacts .footer-contacts-image p {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+footer #footer-contacts .footer-contact-item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+footer #footer-contacts .footer-contact-item {
+    color: #fff !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer #footer-contacts .footer-contact-item h5 {
+    font-weight: normal;
+}
+
+footer #footer-contacts .footer-contact-item p {
+    color: #f3e2a5;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+footer #government-contacts {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    width: 95vw;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    transform: translateY(-50%);
+}
+
+footer #government-contacts .footer-useful {
+    padding: 20px;
+    border-radius: 12px;
+}
+
+footer #government-contacts .footer-useful .footer-useful-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    text-decoration: none;
+}
+
+footer #government-contacts .footer-useful .footer-useful-item .footer-useful-item-image {
+    min-width: 90px;
+    aspect-ratio: 1/1;
+    width: 90px;
+}
+
+footer #government-contacts .footer-useful .footer-useful-item .footer-useful-item-image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center;
+}
+
+footer #government-contacts .footer-useful .footer-useful-item .footer-useful-item-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+footer #government-contacts .footer-useful .footer-useful-item .footer-useful-item-info span {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 149%;
+    color: black;
+    margin-bottom: 4px;
+}
+
+footer #government-contacts .footer-useful .footer-useful-item .footer-useful-item-info small {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 149%;
+    color: rgba(210, 170, 27, 1);
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 8px;
+}
+
+footer #government-contacts .footer-useful .footer-useful-item .footer-useful-item-info small i {
+    font-size: 20px;
+}
+
+/*===========================
+	FOOTER CSS END
 =============================*/

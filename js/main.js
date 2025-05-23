@@ -49,6 +49,27 @@
       dots: false,
     });
   });
+  /*===============================
+        Footer Slider JS
+  =================================*/
+  $('#c-useful').owlCarousel({
+    loop: true, autoplay: true,
+    autoplayTimeout: 3000,
+    nav: false, // show next/prev arrows
+    dots: false, // hide pagination dots
+    responsiveClass: true, responsive: {
+      0: {
+        items: 1, // 0px up to 767px → 2 items
+      }, 520: {
+        items: 2, // 520px up to 767px → 2 items/
+      },
+      768: {
+        items: 3, // 768px up to 991px → 3 items
+      }, 992: {
+        items: 4, // 992px and up → 4 items
+      },
+    },
+  });
 
   /*====================
       Preloader JS
