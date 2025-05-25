@@ -940,6 +940,146 @@ body {
 	NEWS AREA CSS END
 =============================*/
 
+
+/*===========================
+	FAOL USTOZLAR START
+=============================*/
+#teachers {
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+    overlay: hidden;
+    padding: 70px 0;
+    background-color: #1a76d1;
+    border-bottom: 1px solid #fff;
+}
+
+#teachers .container {
+    max-width: 1792px;
+    padding: 0 16px;
+}
+
+#teachers .container .teachers-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#teachers .container .teachers-section-wrapper .teachers-section-header h1 {
+    color: #fff;
+    width: 95%;
+    margin: auto auto 0;
+}
+
+#teachers .container .teachers-section-wrapper .teachers-section-body .teacher-slider-item {
+    border-radius: 16px;
+    height: 100%;
+}
+
+#teachers .container .teachers-section-wrapper .teachers-section-body .teacher-slider-item .teacher-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    height: 100%;
+}
+
+#teachers .container .teachers-section-wrapper .teachers-section-body .teacher-slider-item .teacher-card .teacher-card-image {
+    aspect-ratio: 1.54;
+    border-radius: 16px;
+    overflow: hidden;
+    width: calc(100% - 40px);
+    position: relative;
+    transform: translateY(20px);
+}
+
+#teachers .container .teachers-section-wrapper .teachers-section-body .teacher-slider-item .teacher-card .teacher-card-image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+}
+
+#teachers .container .teachers-section-wrapper .teachers-section-body .teacher-slider-item .teacher-card .teacher-card-info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    background: #fff;
+    padding: 30px 20px 20px;
+}
+
+#teachers .container .teachers-section-wrapper .teachers-section-body .teacher-slider-item .teacher-card .teacher-card-info p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 149%;
+    color: #000000;
+}
+
+#teachers .container .teachers-section-wrapper .teachers-section-footer {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+#teachers .container .teachers-section-wrapper .teachers-section-footer .teacher-slider-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    gap: 6px;
+    transition: all 0.1s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    width: 60px;
+    height: 50px;
+    padding: 0;
+    font-size: 24px;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+#teachers .container .teachers-section-wrapper .teachers-section-footer .teacher-slider-toggle:hover {
+    background-color: #fff;
+    color: #1a76d1;
+}
+
+#teachers .container .teachers-section-wrapper .teachers-section-footer #teachers-dots {
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+}
+
+#teachers .container .teachers-section-wrapper .teachers-section-footer #teachers-dots button {
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    border-radius: 6px;
+    height: 6px;
+    transition: all 0.3s ease-in-out;
+    min-width: 60px;
+}
+
+#teachers .container .teachers-section-wrapper .teachers-section-footer #teachers-dots button.active {
+    background-color: #fff;
+}
+
+/*===========================
+	FAOL USTOZLAR END
+=============================*/
+
+
 /*===========================
 	GOOGLE MAPS Area CSS START
 =============================*/

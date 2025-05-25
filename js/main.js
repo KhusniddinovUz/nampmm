@@ -71,6 +71,69 @@
     },
   });
 
+
+  /*====================
+      Faol Ustozlar JS
+  ======================*/
+  const initializeCarousel = (carouselID, prevBtnID, nextBtnID, dotWrapperID, options) => {
+    const owl = $(`${carouselID}`);
+    const prevBtn = $(`${prevBtnID}`);
+    const nextBtn = $(`${nextBtnID}`);
+    owl.owlCarousel(options);
+    if (dotWrapperID) {
+      $(`${dotWrapperID} i`).click(function () {
+        owl.trigger('to.owl.carousel', [$(this).index(), 300]);
+      });
+    }
+    prevBtn.click(() => {
+      owl.trigger('prev.owl.carousel');
+    });
+    nextBtn.click(() => {
+      owl.trigger('next.owl.carousel');
+    });
+    owl.on('changed.owl.carousel', (event) => {
+      if (event.item.index === 0) {
+        prevBtn.addClass('disabled');
+      } else {
+        prevBtn.removeClass('disabled');
+      }
+      if (event.item.index === event.item.count - 1) {
+        nextBtn.addClass('disabled');
+      } else {
+        nextBtn.removeClass('disabled');
+      }
+    });
+  };
+
+  const CAnnouncement = {
+    loop: false,
+    margin: 20,
+    dots: true,
+    nav: false,
+    autoplay: false,
+    items: 4,
+    dotsContainer: '#teachers-dots',
+    responsive: {
+      1440: {
+        margin: 20,
+        items: 4,
+      },
+      992: {
+        margin: 16,
+        items: 3,
+      },
+      768: {
+        margin: 16,
+        items: 2,
+      },
+      320: {
+        margin: 16,
+        items: 1,
+      },
+    },
+  };
+  initializeCarousel('#teachers-slider', '#teacher-slider-left', '#teacher-slider-right', '#teachers-dots', CAnnouncement);
+
   /*====================
       Preloader JS
   ======================*/
