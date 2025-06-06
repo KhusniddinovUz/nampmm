@@ -328,8 +328,27 @@ body {
 }
 
 .header .logo {
-    float: left;
-    margin-top: 18px;
+    margin-top: 7px;
+}
+
+.header .logo > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 150px;
+    gap: 5px;
+}
+
+.header .logo > a > img {
+    width: 50px;
+    height: auto;
+}
+
+.header .logo > a > span {
+    color: #21409A;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: bold;
 }
 
 .header .navbar {
@@ -777,7 +796,6 @@ body {
 	End Hero Area CSS
 =============================*/
 
-
 /*===========================
 	CIRCULAR LOOP CSS
 =============================*/
@@ -819,7 +837,10 @@ body {
     height: 100px;
     border-radius: 50%;
     margin: -50px;
-    background: rgba(26, 118, 209, 0.8);
+    /* background: rgba(26, 118, 209, 0.8); */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.15);
     transform: rotate(calc(360deg / var(--n) * var(--i))) translateY(calc(-1 * var(--r))) rotate(calc(-360deg / var(--n) * var(--i)));
 }
 
@@ -874,7 +895,6 @@ body {
 /*===========================
 	CIRCULAR LOOP CSS
 =============================*/
-
 
 /*===========================
 	NEWS AREA CSS END
@@ -939,7 +959,6 @@ body {
 /*===========================
 	NEWS AREA CSS END
 =============================*/
-
 
 /*===========================
 	FAOL USTOZLAR START
@@ -1079,7 +1098,6 @@ body {
 	FAOL USTOZLAR END
 =============================*/
 
-
 /*===========================
 	GOOGLE MAPS Area CSS START
 =============================*/
@@ -1138,7 +1156,6 @@ h3 {
 /*===========================
 	GOOGLE MAPS Area CSS END
 =============================*/
-
 
 /*===========================
 	FOOTER CSS START
