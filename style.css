@@ -13,6 +13,10 @@
 /*=============================
 	Global CSS
 ===============================*/
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -236,7 +240,7 @@ body {
 	Start Header CSS
 =====================*/
 .header {
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0) !important;
     position: absolute;
     top: 0;
     left: 0;
@@ -308,10 +312,12 @@ body {
 }
 
 .header .header-inner {
-    background: #fff;
+    background: rgba(255, 255, 255, 0) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     z-index: 999;
     width: 100%;
 }
+
 
 .header .header-inner .conntainer {
     width: 100%;
@@ -319,23 +325,47 @@ body {
     padding: 0;
 }
 
-.get-quote {
-    margin-top: 12px;
+.get-quote .btn {
+    text-transform: uppercase;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 10px 15px !important;
 }
 
-.get-quote .btn {
-    color: #fff;
+.get-quote .btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+}
+
+.nav-container .mr-5, .ml-5 {
+    flex: 0 0 auto;
+}
+
+.nav-container .main-menu-container {
+    flex: 1 1 auto;
 }
 
 .header .logo {
-    margin-top: 7px;
+    width: 100%;
+    height: 100%;
 }
 
 .header .logo > a {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 150px;
+    max-width: 250px;
+    height: 100px;
     gap: 5px;
 }
 
@@ -345,9 +375,9 @@ body {
 }
 
 .header .logo > a > span {
-    color: #21409A;
-    font-size: 12px;
-    line-height: 12px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 18px;
     font-weight: bold;
 }
 
@@ -360,8 +390,12 @@ body {
     min-height: 0px;
 }
 
+.header .nav {
+    justify-content: space-between;
+}
+
 .header .nav li {
-    margin-right: 15px;
+    /*margin-right: 15px;*/
     float: left;
     position: relative;
 }
@@ -371,14 +405,14 @@ body {
 }
 
 .header .nav li a {
-    color: #2c2d3f;
-    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
     font-weight: 500;
-    text-transform: capitalize;
+    line-height: 150%;
     padding: 25px 12px;
     position: relative;
     display: inline-block;
-    position: relative;
 }
 
 .header .nav li a::before {
@@ -386,8 +420,8 @@ body {
     content: '';
     left: 0;
     bottom: 0;
-    height: 3px;
-    width: 0%;
+    height: 0;
+    width: 0;
     background: #1a76d1;
     border-radius: 5px 5px 0 0;
     opacity: 0;
@@ -414,7 +448,7 @@ body {
 }
 
 .header .nav li:hover a {
-    color: #1a76d1;
+    color: #fff;
 }
 
 .header .nav li a i {
@@ -496,7 +530,6 @@ body {
     width: 220px;
     position: absolute;
     left: -20px;
-    top: 100%;
     z-index: 999;
     -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
@@ -508,7 +541,7 @@ body {
     transition: all 0.3s ease 0s;
     opacity: 0;
     visibility: hidden;
-    top: 74px;
+    top: 60px;
     border-left: 3px solid #2889e4;
 }
 
@@ -664,6 +697,8 @@ body {
     transition: all 0.4s ease;
     animation: fadeInDown 0.5s both 0.1s;
     box-shadow: 0px 0px 13px #00000054;
+    backdrop-filter: blur(20px);
+    background-color: rgba(26, 118, 209, 0.3) !important;
 }
 
 /*=========================
